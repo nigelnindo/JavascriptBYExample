@@ -91,10 +91,13 @@ function totalCases(coronaCasesObject) {
   
   for (key in coronaCasesObject) {
       totalCases = totalCases + coronaCasesObject[key]
+      console.log('Television: ' + totalCases)
   }
 
   return totalCases;
 }
+
+totalCases(coronaCases)
 
 /**
  * (): Brackets
@@ -103,16 +106,16 @@ function totalCases(coronaCasesObject) {
  */
 
  /**
-  * []: ??
+  * []: Square brackets
   * -> Defining elements within an array data structure i.e [1,2,3]
-  * -> passing in akey to get the value of an object i.e baes['key']
+  * -> passing in a key to get the value of an object i.e baes['key']
   * -> Get the value contained within an array at a specific index i.e numbers[0]
   */
 
 /**
  * {}: Curly brackets
- * -> creating a isolated scope
- * -> writing code for your function i.e function add (a, b) { a + b}
+ * -> creating a isolated scope (does not work with var)
+ * -> writing code for your function i.e function add (a, b) { a + b }
  * -> defining objects i.e {'key': 'value'}
  */
 
